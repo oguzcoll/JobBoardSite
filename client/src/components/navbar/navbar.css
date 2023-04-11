@@ -1,0 +1,61 @@
+.navbar {
+  
+    border-bottom: 2px solid gray;
+    height: 50px;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Set height to 100% to center the child elements vertically */
+  }
+  
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center child elements horizontally */
+    height: 100%; /* Set height to 100% to center the child elements vertically */
+    
+  }
+  
+  .middle span {
+    margin: 0 30px; /* Add margin to the left and right of the spans */
+
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Set height to 100% to center the child elements vertically */
+  }
+  
+  .right button {
+    margin: 10px 10px; /* Add margin to the left and right of the buttons */
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: blue;
+    color: bisque;
+    border: 1px solid gray;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .text {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  

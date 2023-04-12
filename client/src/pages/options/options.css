@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box1 {
+    width: 724px;
+    height: 483px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.box2 {
+    width: 724px;
+    height: 483px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#container ul {
+    list-style: none;
+}

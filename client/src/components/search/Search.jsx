@@ -14,15 +14,23 @@ function Search(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="search-form">
-      <input
-        type="text"
-        placeholder="Search for a job"
-        value={searchTerm}
-        onChange={handleInputChange}
-      />
-      <button type="submit">Search</button>
-    </form>
+    <div className="container">
+      <form onSubmit={handleSubmit} className="search-form">
+        <input
+          type="text"
+          placeholder="Search by Country"
+          value={searchTerm}
+          onChange={handleInputChange}
+        />
+        <input
+          type="text"
+          placeholder="Search by Job name"
+          value={searchTerm}
+          onChange={handleInputChange}
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
   );
 }
 

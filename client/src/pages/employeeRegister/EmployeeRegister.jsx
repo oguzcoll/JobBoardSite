@@ -55,7 +55,11 @@ function EmployeeRegister() {
       <form onSubmit={handleSubmit}>
         <label>
           First Name:
-          <input type="text" value={firstName} onChange={handleFirstNameChange} />
+          <input
+            type="text"
+            value={firstName}
+            onChange={handleFirstNameChange}
+          />
         </label>
         <label>
           Last Name:
@@ -67,19 +71,35 @@ function EmployeeRegister() {
         </label>
         <label>
           Password:
-          <input type="password" value={password} onChange={handlePasswordChange} />
+          <input
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
         </label>
         <label>
           Graduated Department:
-          <input type="text" value={graduatedDepartment} onChange={handleGraduatedDepartmentChange} />
+          <input
+            type="text"
+            value={graduatedDepartment}
+            onChange={handleGraduatedDepartmentChange}
+          />
         </label>
         <label>
           Current Job:
-          <input type="text" value={currentJob} onChange={handleCurrentJobChange} />
+          <input
+            type="text"
+            value={currentJob}
+            onChange={handleCurrentJobChange}
+          />
         </label>
         <label>
           Birth Date:
-          <input type="date" value={birthDate} onChange={handleBirthDateChange} />
+          <input
+            type="date"
+            value={birthDate}
+            onChange={handleBirthDateChange}
+          />
         </label>
         <button type="submit">Register</button>
       </form>

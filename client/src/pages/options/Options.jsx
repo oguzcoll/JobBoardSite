@@ -1,24 +1,24 @@
 import React from "react";
 import "./options.css";
+import { Link } from "react-router-dom";
+import employer from "../../assets/employer.png";
+import jobSeeker from "../../assets/job-seeker.png";
+
 function Options() {
+  return (
     <div id="container">
-    <div class="box1">
-        <ul>
-            <li>
-                <a href="#"><img src="employer.png" alt="" /></a>
-            </li>
-        </ul>
-
-
+      <div class="box1">
+        <Link to="/employerRegister">
+          <img src={employer} alt="" />
+        </Link>
+      </div>
+      <div class="box2">
+        <Link to="/employeeRegister">
+          <img src={jobSeeker} alt="" />
+        </Link>
+      </div>
     </div>
-    <div class="box2">
-        <ul>
-            <li>
-            <a href="#"><img src="job-seeker.png" alt="" /></a>
-            </li>
-        </ul>
-    </div>
-</div>
+  );
 }
 
 export default Options;

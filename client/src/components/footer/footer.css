@@ -4,7 +4,7 @@
   bottom: 0;
   height: 75px;
   width: 100%;
-  background-color: #333;
+  background-color:gray;
   color: #fff;
   padding: 20px 0;
   }
@@ -38,7 +38,7 @@
   .footer-bottom {
     margin: 10px;
 
-  background-color:burlywood;
+  background-color:cadetblue;
   padding: 10px;
   text-align: center;
   }

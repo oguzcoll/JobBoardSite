@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Options from "./pages/options/Options";
 import EmployeeRegister from "./pages/employeeRegister/EmployeeRegister";
 import EmployeeLogin from "./pages/employeeLogin/EmployeeLogin";
+
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +18,10 @@ function App() {
           <Route
             path="/employeeRegister"
             element={<EmployeeRegister />}
+            
+
           ></Route>
+          
         </Routes>
       </Router>
     </div>

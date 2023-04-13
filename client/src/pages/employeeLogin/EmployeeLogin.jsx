@@ -6,8 +6,7 @@ function EmployeeLogin() {
   return (
 
     <div className="employeeLogin">
-      
-    
+
     <div>
         <div className="employee-login">
             <div className="col-1">
@@ -40,5 +39,4 @@ function EmployeeLogin() {
   );
 
 };
-
 export default EmployeeLogin;

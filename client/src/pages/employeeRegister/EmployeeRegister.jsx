@@ -1,8 +1,10 @@
 import React from "react";
 import "./employeeRegister.css";
 import signimg from "./signimg.png";
+import {useNavigate} from "react-router-dom";
 
 function EmployeeRegister() {
+  const navigate = useNavigate();
   return (
     <div className="employeeregister">
       <div className="main">
@@ -24,7 +26,7 @@ function EmployeeRegister() {
             </form>
 
             <div className="logininfo">Do you have an account?</div>
-            <button className="logbtn">Log In</button>
+            <button className="logbtn" onClick={() => {navigate("/employeeLogin")}}>Log In</button>
           </div>
 
           <div className="col-2">

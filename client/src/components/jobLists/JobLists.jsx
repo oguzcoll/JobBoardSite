@@ -10,6 +10,10 @@ function JobLists() {
       <Job />
       <Job />
       <Job />
+      <Job />
+      <Job />
+      <Job />
+      <Job />
     </div>
   );
 }

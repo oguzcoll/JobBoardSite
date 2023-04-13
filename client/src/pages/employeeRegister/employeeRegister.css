@@ -5,11 +5,15 @@
     margin: 0;
 }
 
+.main{
 
+  width: 55%;
+ margin:  150px auto;
+}
 
 .employeeregister{
-  height: 100vh;
-  display: flex;
+  width: auto;
+ 
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -67,6 +71,7 @@
 
 
 .register .col-1{
+ 
   margin: auto;
   padding: 3em 0;
 }

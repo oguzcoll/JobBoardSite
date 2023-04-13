@@ -6,7 +6,7 @@ import Search from "../../components/search/Search";
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <Search />
       <JobLists />
       <Footer />

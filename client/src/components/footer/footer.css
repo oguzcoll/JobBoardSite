@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 150px;
+  height: 75px;
   width: 100%;
   background-color: #333;
   color: #fff;
@@ -11,7 +11,7 @@
   
   .footer-container {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -36,10 +36,10 @@
   }
   
   .footer-bottom {
-    margin: 30px;
+    margin: 10px;
 
   background-color:burlywood;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   }
   .foot-link  {

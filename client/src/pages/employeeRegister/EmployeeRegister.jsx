@@ -5,7 +5,13 @@ import signimg from "./signimg.png";
 function EmployeeRegister() {
   return (
     <div className="employeeregister">
+<<<<<<< HEAD
       <div className="main">
+=======
+      
+    
+    <div className='main'>
+>>>>>>> 7ecafea33246310acc3b65f0c2cb328af045a896
         <div className="register">
           <div className="col-1">
             <h2>Register</h2>

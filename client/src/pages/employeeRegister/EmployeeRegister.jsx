@@ -11,7 +11,7 @@ import signimg from './signimg.png';
     <div className="employeeregister">
       
     
-    <div>
+    <div className='main'>
         <div className="register">
             <div className="col-1">
                 <h2>Register</h2>

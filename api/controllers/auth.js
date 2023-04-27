@@ -14,7 +14,7 @@ export const registerEmployee = (req, res) => {
   bcrypt.hash(password, 10, (err, hashedPassword) => {
     if (err) {
       console.log(err);
-      res.status(500).json({ error: "Error hashing password" });
+      res.status(500).json({ error: "Error hahing password" });
     } else {
       // Insert the employee's information into the users table
       dbConnection.query(

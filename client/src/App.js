@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Options from "./pages/options/Options";
 import EmployeeRegister from "./pages/employeeRegister/EmployeeRegister";
 import EmployeeLogin from "./pages/employeeLogin/EmployeeLogin";
-
+import AboutPage from "./pages/aboutPage/aboutPage";
 
 function App() {
   return (
@@ -18,10 +18,8 @@ function App() {
           <Route
             path="/employeeRegister"
             element={<EmployeeRegister />}
-            
-
           ></Route>
-          
+          <Route path="/about" element={<AboutPage />}></Route>
         </Routes>
       </Router>
     </div>

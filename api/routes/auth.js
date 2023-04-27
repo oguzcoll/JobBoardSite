@@ -1,10 +1,23 @@
 import express from "express";
-import { login, register, logout } from "../controllers/auth.js";
+import {
+  loginEmployee,
+  registerEmployee,
+  logoutEmployee,
+  loginEmployer,
+  registerEmployer,
+  logoutEmployer,
+} from "../controllers/auth.js";
 
 const router = express.Router();
+router.use(express.json());
+router.use(express.urlencoded({ extended: true }));
 
-router.post("/login", login);
-router.post("/register", register);
-router.post("/logout", logout);
+router.post("/loginEmployee", loginEmployee);
+router.post("/registerEmployee", registerEmployee);
+router.delete("/logoutEmployee", logoutEmployee);
+
+router.post("/loginEmployer", loginEmployer);
+router.post("/registerEmployer", registerEmployer);
+router.post("/logoutEmployer", logoutEmployer);
 
 export default router;

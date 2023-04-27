@@ -1,12 +1,17 @@
-const express = require('express');
-const mysql = require('mysql');
+import mysql from "mysql";
 
 // Create MySQL connection
-const dbConnection = mysql.createConnection({
-  host: 'localhost',
-  user: 'sqluser', 
-  password: 'Bugra3738.', 
-  database: 'u_wanna_job', 
+export const dbConnection = mysql.createConnection({
+  host: "localhost",
+  user: "springstudent",
+  password: "springstudents",
+  database: "uwannajob",
 });
 
-
+dbConnection.connect(function (err) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("connected to MYSQL");
+  }
+});

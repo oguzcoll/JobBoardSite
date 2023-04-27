@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Options from "./pages/options/Options";
 import EmployeeRegister from "./pages/employeeRegister/EmployeeRegister";
 import EmployeeLogin from "./pages/employeeLogin/EmployeeLogin";
+import JobDetails from "./pages/jobDetails/JobDetails";
+import Modal from "./components/Modal/Modal";
 
 
 function App() {
@@ -21,7 +23,9 @@ function App() {
             
 
           ></Route>
-          
+          <Route path="/jobDetails" element={<JobDetails />}></Route>
+          <Route path="/modal" element={<Modal />}></Route>
+
         </Routes>
       </Router>
     </div>

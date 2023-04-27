@@ -12,7 +12,7 @@ function Navbar() {
           <div className="text">UWannaJob</div>
         </div>
         <div className="middle">
-          <a href="/">
+          <a href="/home">
             <span>Home</span>
           </a>
           <a href="/">

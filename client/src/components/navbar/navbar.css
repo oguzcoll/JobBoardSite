@@ -42,6 +42,7 @@
   border: 1px solid gray;
   width: 100px;
   cursor: pointer;
+  justify-content: center;
 }
 
 .text {

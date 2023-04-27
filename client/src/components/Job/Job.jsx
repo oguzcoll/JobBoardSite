@@ -1,6 +1,8 @@
 import React from "react";
 import "./job.css";
+import {useNavigate} from "react-router-dom";
 function Job() {
+  const navigate = useNavigate();
   return (
     <div className="mainJob">
       <div className="name">Software Engineer</div>
@@ -10,7 +12,7 @@ function Job() {
         <div className="salary">9.000 TL - 20.000 TL</div>
         <div className="typeOfjob">Full Time</div>
       </div>
-      <button className="detailBtn">Details</button>
+      <button className="detailBtn" onClick={() => {navigate("/modal")}}>Details</button>
     </div>
   );
 }

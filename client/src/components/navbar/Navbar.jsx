@@ -19,9 +19,10 @@ function Navbar() {
           <Link to="/about">
             <span>About</span>
           </Link>
-          <a href="/">
+
+          <Link to="/salary">
             <span>Salary</span>
-          </a>
+          </Link>
         </div>
         <div className="right">
           <button

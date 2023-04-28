@@ -5,6 +5,7 @@ import Options from "./pages/options/Options";
 import EmployeeRegister from "./pages/employeeRegister/EmployeeRegister";
 import EmployeeLogin from "./pages/employeeLogin/EmployeeLogin";
 import AboutPage from "./pages/aboutPage/aboutPage";
+import Salary from "./pages/salary/Salary";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             element={<EmployeeRegister />}
           ></Route>
           <Route path="/about" element={<AboutPage />}></Route>
+          <Route path="/salary" element={<Salary />}></Route>
         </Routes>
       </Router>
     </div>

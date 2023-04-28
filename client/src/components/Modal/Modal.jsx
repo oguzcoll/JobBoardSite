@@ -1,6 +1,5 @@
 import React from "react";
 import "./modal.css";
-
 import { useNavigate } from "react-router-dom";
 
 function Modal() {
@@ -41,4 +40,5 @@ function Modal() {
     </div>
   );
 }
+
 export default Modal;

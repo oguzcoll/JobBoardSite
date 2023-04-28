@@ -18,6 +18,18 @@ function Salary() {
     { jobTitle: "UI Designer", location: "Chicago, IL", salary: "$80,000" },
     { jobTitle: "Marketing Manager", location: "Boston, MA", salary: "$100,000" },
     { jobTitle: "Product Manager", location: "Austin, TX", salary: "$130,000" },
+    { jobTitle: "Marketing Manager", location: "Boston, MA", salary: "$100,000" },
+    { jobTitle: "Product Manager", location: "Austin, TX", salary: "$130,000" },
+    { jobTitle: "Data Scientist", location: "Seattle, WA", salary: "$110,000" },
+    { jobTitle: "UI Designer", location: "Chicago, IL", salary: "$80,000" },
+    { jobTitle: "Marketing Manager", location: "Boston, MA", salary: "$100,000" },
+    { jobTitle: "Product Manager", location: "Austin, TX", salary: "$130,000" },
+    { jobTitle: "Marketing Manager", location: "Boston, MA", salary: "$100,000" },
+    { jobTitle: "Product Manager", location: "Austin, TX", salary: "$130,000" },
+    { jobTitle: "Data Scientist", location: "Seattle, WA", salary: "$110,000" },
+    { jobTitle: "UI Designer", location: "Chicago, IL", salary: "$80,000" },
+    { jobTitle: "Marketing Manager", location: "Boston, MA", salary: "$100,000" },
+    { jobTitle: "Product Manager", location: "Austin, TX", salary: "$130,000" },
   ];
 
   const [searchSalary, setSearchSalary] = useState("");

@@ -1,12 +1,9 @@
-
 .salarycontainer{
-  
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-
-
-
 
 h1{
   color:darkcyan ;
@@ -15,46 +12,49 @@ h1{
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .search{
   position: absolute;
-  
- 
- margin-left: 235px;
- margin-top: 50px;
-
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1100px;
 }
 
-
- 
-
 .search label {
+  font-weight: 800;
 
-  margin-right: 0;
-  margin-left:30px;
+  max-width: max-content;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
   
-
-  
-
 }
 
 .search input {
- 
-  margin-right: 0;
   border: none;
   border-radius: 5px;
+  padding: 8px;
+  width: 70%;
+  margin-right: 10px;
 }
+
+
 
 .list-container {
   background-color: #f5f5f5;
   padding: 20px;
   position: absolute;
-  margin-left: 170PX;
-  
-    top: 300px;
-    width: 80%;
-
-
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 350px;
+  width: 100%;
+  max-width: 1300px;
 }
 
 table {
@@ -62,7 +62,6 @@ table {
   width: 100%;
   text-align: center;
 }
-
 
 th, td {
   padding: 10px;
@@ -75,7 +74,7 @@ th {
 }
 
 td:first-child {
-  text-align: left;
+  text-align: center;
 }
 
 .job-box {
@@ -85,13 +84,10 @@ td:first-child {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-.salarytable{
- 
 
 
-}
+
 .job-title {
-  
   font-weight: bold;
   margin-bottom: 5px;
 }

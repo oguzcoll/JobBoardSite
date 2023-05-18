@@ -8,9 +8,20 @@ export const AuthContextProvider = ({ children }) => {
     JSON.parse(localStorage.getItem("user")) || null
   );
 
-  const login = async (inputs) => {
+  const loginEmployee = async (inputs) => {
     const res = await axios.post(
       "http://localhost:8800/api/auth/loginEmployee",
+      inputs,
+      {
+        withCredentials: true,
+      }
+    );
+    setCurrentUser(res.data);
+  };
+
+  const loginEmployer = async (inputs) => {
+    const res = await axios.post(
+      "http://localhost:8800/api/auth/loginEmployer",
       inputs,
       {
         withCredentials: true,
@@ -24,7 +35,7 @@ export const AuthContextProvider = ({ children }) => {
   }, [currentUser]);
 
   return (
-    <AuthContext.Provider value={{ currentUser, login }}>
+    <AuthContext.Provider value={{ currentUser, loginEmployee, loginEmployer }}>
       {children}
     </AuthContext.Provider>
   );

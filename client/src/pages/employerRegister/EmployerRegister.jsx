@@ -1,7 +1,7 @@
 import React from "react";
 import "./employerRegister.css";
 import signimg from "./signimg.png";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function EmployerRegister() {
   const navigate = useNavigate();
@@ -23,12 +23,19 @@ function EmployerRegister() {
               <input type="text" placeholder="City" />
               <input type="text" placeholder="Tax City" />
               <input type="text" placeholder="Tax Administration" />
-              <input type="text" placeholder="Tax City" />
+
               <button className="signbtn">Sign In</button>
             </form>
 
             <div className="logininfo">Do you have an account?</div>
-            <button className="logbtn" onClick={() => {navigate("/employerLogin")}}>Sign In</button>
+            <button
+              className="logbtn"
+              onClick={() => {
+                navigate("/employerLogin");
+              }}
+            >
+              Sign In
+            </button>
           </div>
 
           <div className="col-2">

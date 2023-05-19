@@ -59,7 +59,7 @@ color: black;
 .text {
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 12%;
   transform: translateX(-50%); /* Center the text horizontally */
   font-size: 50px;
   color: blueviolet;

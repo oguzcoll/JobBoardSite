@@ -45,7 +45,8 @@ function Salary() {
   });
 
   return (
-    <div>
+   <div className="list-container">
+    <div className="sal">
     <div className="salarycontainer">
       <h1>Find Your Salary</h1></div>
       <div className= "search">
@@ -61,7 +62,7 @@ function Salary() {
         <label htmlFor="location">Search by location:</label>
         <input type="text" id="location" value={searchLocation} onChange={(e) => setSearchLocation(e.target.value)} />
       </div>
-      <div className="list-container">
+      
         <table>
           <thead>
             <tr>
@@ -82,6 +83,7 @@ function Salary() {
         </table>
       </div>
     </div>
+   
   );
 
 }

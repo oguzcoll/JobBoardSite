@@ -3,13 +3,16 @@
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
+    
 }
 
 .about {
     width: 100%;
     height: 930px;
     padding-top: 300px;
-    background-color: #191919;
+    
+    background: rgb(230,100,101);
+background: linear-gradient(180deg, rgba(230,100,101,1) 30%, rgba(26,9,9,1) 50%, rgba(100,215,230,1) 82%);
 }
 
 .about img {
@@ -51,6 +54,7 @@ span {
 }
 
 .about-text p {
+    
     color: #dfd7c7;
     letter-spacing: 1px;
     line-height: 28px;
@@ -58,7 +62,8 @@ span {
     margin-bottom: 45px;
 }
 
-button {
+buttonn {
+    margin: 10px 150px;
     background: #cab486;
     color: #fff;
     text-decoration: none;

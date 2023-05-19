@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 
 function AboutPage() {
   return (
-    <body>
+    <body className="">
       <div className="about">
         <div className="main">
           <img src={logo} alt="UWannaJob Logo" />
@@ -19,7 +19,7 @@ function AboutPage() {
               unemployment problem of young people and all people who are
               looking for a job.
             </p>
-            <button type="button">Get Contact Us</button>
+            <button type="buttonn">Get Contact Us</button>
           </div>
         </div>
       </div>

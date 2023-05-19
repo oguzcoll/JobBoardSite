@@ -1,6 +1,10 @@
 .home {
+  padding-top: 100px;
+ 
     display: flex;
     flex-direction: column;
     height: 100%;
     overflow: auto;
+    background: rgb(230,100,101);
+    background: linear-gradient(180deg, rgba(230,100,101,1) 0%, rgba(203,199,190,1) 10%, rgba(145,152,229,1) 39%);
   }

@@ -1,10 +1,13 @@
 .navbar {
-  border-bottom: 2px solid gray;
-  height: 50px;
+ 
+ 
+  height: 110px;
   position: relative;
+  background: linear-gradient(#e66465, #e66465);
 }
 
 .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,16 +15,23 @@
 }
 
 .middle {
+ 
+  max-width: 20%;
   display: flex;
   align-items: center;
   justify-content: center; /* Center child elements horizontally */
   height: 100%; /* Set height to 100% to center the child elements vertically */
-  
+  font-size: 25px;
+ 
 }
 
 .middle span {
+  pointer-events: painted;
+   
+  
+  
   margin: 0 30px; /* Add margin to the left and right of the spans */
-
+color: black;
 }
 
 .right {
@@ -34,23 +44,24 @@
 
 .right button {
   margin: 10px 10px; /* Add margin to the left and right of the buttons */
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 20px;
   padding: 5px;
-  background-color: blue;
+  border-bottom: 0cap;
+    background-color: blueviolet;
   color: bisque;
-  border: 1px solid gray;
-  width: 100px;
+  width: 125px;
+  
   cursor: pointer;
   justify-content: center;
 }
 
 .text {
   position: absolute;
-  top: 15%;
-  left: 10%;
+  top: 20%;
+  left: 12%;
   transform: translateX(-50%); /* Center the text horizontally */
-  font-size: 30px;
+  font-size: 50px;
   color: blueviolet;
   font-weight: 700;
   font-family: Georgia, 'Times New Roman', Times, serif;

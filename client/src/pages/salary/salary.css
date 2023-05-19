@@ -3,6 +3,8 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  
+  
 }
 
 h1{
@@ -14,11 +16,15 @@ h1{
 }
 
 .search{
-  position: absolute;
+  
+  
+  
+
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 50px auto 20px;
   left: 0;
   right: 0;
   width: 100%;
@@ -46,18 +52,21 @@ h1{
 
 
 .list-container {
-  background-color: #f5f5f5;
+  background: rgb(230,100,101);
+background: linear-gradient(180deg, rgba(230,100,101,1) 0%, rgba(203,199,190,1) 12%, rgba(145,152,229,1) 90%);
   padding: 20px;
-  position: absolute;
+  position:relative;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 350px;
+  top: 0px;
   width: 100%;
-  max-width: 1300px;
+
+
 }
 
 table {
+  
   border-collapse: collapse;
   width: 100%;
   text-align: center;
@@ -78,7 +87,7 @@ td:first-child {
 }
 
 .job-box {
-  background-color: #fff;
+ 
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;

@@ -2,7 +2,7 @@
     width: calc(33.33% - 10px);
     margin-bottom: 20px;
     box-sizing: border-box;
-    border: 2px solid  rgb(22, 191, 233);
+    
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -10,8 +10,8 @@
     justify-content: center;
     padding: 20px;
     text-align: center;
-    background-color: rgb(170, 211, 211);
-    box-shadow: 0in;
+    background: rgb(255,195,113);
+    background: radial-gradient(circle, rgba(255,195,113,1) 0%, rgba(145,152,229,0.01) 100%);
   }
 
   .mainJob > * {
@@ -20,6 +20,7 @@
     overflow: auto;
     text-overflow: ellipsis;
     white-space: nowrap;
+    
   }
   .name{
     font-size: 25px;
@@ -35,6 +36,6 @@
  font-family: Arial, Helvetica, sans-serif;
   }
   .detailBtn{
-    background-color: blue;
+    background-color: blueviolet;
     border-radius: 20px;
   }

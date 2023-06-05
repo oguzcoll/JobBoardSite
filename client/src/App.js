@@ -7,6 +7,7 @@ import EmployeeLogin from "./pages/employeeLogin/EmployeeLogin";
 import AboutPage from "./pages/aboutPage/aboutPage";
 import Salary from "./pages/salary/Salary";
 import  Modal  from "./components/Modal/Modal";
+import Profile from "./pages/profile/profile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<AboutPage />}></Route>
           <Route path="/salary" element={<Salary />}></Route>
           <Route path="/detail" element={<Modal />}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
         </Routes>
       </Router>
     </div>

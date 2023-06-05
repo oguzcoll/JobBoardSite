@@ -41,6 +41,14 @@ function Navbar() {
           >
             Register
           </button>
+          <button
+            className="profile"
+            onClick={() => {
+              navigate("/profile");
+            }}
+          >
+            Profile
+            </button>
         </div>
       </div>
     </div>

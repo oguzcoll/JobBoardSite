@@ -147,12 +147,11 @@ export const registerEmployer = (req, res) => {
     !req.body.surname ||
     !req.body.email ||
     !req.body.password ||
-    !req.body.company_name ||
-    !req.body.country_name ||
-    !req.body.city_name ||
-    !req.body.tax_city_name ||
-    !req.body.tax_administration ||
-    !req.body.tax_number
+    !req.body.companyName ||
+    !req.body.country ||
+    !req.body.city ||
+    !req.body.taxCity ||
+    !req.body.taxAdministration
   ) {
     return res.status(400).json({ error: "All fields are required" });
   }
@@ -163,12 +162,11 @@ export const registerEmployer = (req, res) => {
     email,
     surname,
     password,
-    company_name,
-    country_name,
-    city_name,
-    tax_city_name,
-    tax_administration,
-    tax_number,
+    companyName,
+    country,
+    city,
+    taxCity,
+    taxAdministration,
   } = req.body;
 
   // Hash the password using bcrypt
@@ -179,7 +177,7 @@ export const registerEmployer = (req, res) => {
     } else {
       // Insert the employer's information into the users table
       dbConnection.query(
-        "INSERT INTO users (name,surname, email, password, user_type) VALUES (?,?, ?, ?, 'employer')",
+        "INSERT INTO users (name, surname, email, password, user_type) VALUES (?, ?, ?, ?, 'employer')",
         [name, surname, email, hashedPassword],
         (err, result) => {
           if (err) {
@@ -191,16 +189,8 @@ export const registerEmployer = (req, res) => {
 
             // Insert the employer's information into the employers table
             dbConnection.query(
-              "INSERT INTO employers (user_id, company_name, country_name, city_name, tax_city_name, tax_administration, tax_number) VALUES (?, ?, ?, ?, ?, ?, ?)",
-              [
-                user_id,
-                company_name,
-                country_name,
-                city_name,
-                tax_city_name,
-                tax_administration,
-                tax_number,
-              ],
+              "INSERT INTO employers (user_id, company_name, country_name, city_name, tax_city_name, tax_administration) VALUES (?, ?, ?, ?, ?, ?)",
+              [user_id, companyName, country, city, taxCity, taxAdministration],
               (err, result) => {
                 if (err) {
                   console.log(err);

@@ -6,8 +6,14 @@ import EmployeeRegister from "./pages/employeeRegister/EmployeeRegister";
 import EmployeeLogin from "./pages/employeeLogin/EmployeeLogin";
 import AboutPage from "./pages/aboutPage/aboutPage";
 import Salary from "./pages/salary/Salary";
-import  Modal  from "./components/Modal/Modal";
+
+
 import Profile from "./pages/profile/profile";
+
+import Modal from "./components/Modal/Modal";
+import EmployerRegister from "./pages/employerRegister/EmployerRegister";
+import EmployerLogin from "./pages/employerLogin/EmployerLogin";
+
 
 function App() {
   return (
@@ -21,6 +27,11 @@ function App() {
           <Route
             path="/employeeRegister"
             element={<EmployeeRegister />}
+          ></Route>
+          <Route path="/employerLogin" element={<EmployerLogin />}></Route>
+          <Route
+            path="/employerRegister"
+            element={<EmployerRegister />}
           ></Route>
           <Route path="/about" element={<AboutPage />}></Route>
           <Route path="/salary" element={<Salary />}></Route>

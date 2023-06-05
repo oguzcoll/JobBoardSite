@@ -12,7 +12,7 @@ app.use(
     credentials: true,
   })
 );
-
+app.use(Express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/jobs", jobsRoute);
 app.use("/api/employees", employeesRoute);
